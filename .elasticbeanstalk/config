@@ -1,0 +1,11 @@
+[global]
+ApplicationName=railsgoat
+DevToolsEndpoint=git.elasticbeanstalk.us-east-1.amazonaws.com
+EnvironmentName=railsgoat-env
+InstanceProfileName=aws-elasticbeanstalk-ec2-role
+OptionSettingFile=/Users/cktricky/tmp/railsgoat/.elasticbeanstalk/optionsettings.railsgoat-env
+RdsEnabled=No
+Region=us-east-1
+ServiceEndpoint=https://elasticbeanstalk.us-east-1.amazonaws.com
+SolutionStack=64bit Amazon Linux running Ruby 1.9.3
+
