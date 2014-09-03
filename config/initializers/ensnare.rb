@@ -26,7 +26,7 @@ config.current_user_method = :current_user
 ## config.current_user_identifier = :id
 
 # Identiifes the method used to retrieve the currently logged-in admin user object/id
-## config.dashboard_user_method = :current_user
+config.dashboard_user_method = :current_user
 
 # Identifies the method/attribute on the admin user object used to determine if the user has authorization to view the dashboard
   # For example, if the dashboard_user_method is set to :current_user and the dashboard_user_identifier is set to :admin
