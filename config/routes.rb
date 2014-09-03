@@ -100,6 +100,10 @@ Railsgoat::Application.routes.draw do
    end
 
 
-  root :to => "sessions#new"
+   mount Ensnare::Engine => "/ensnare", :as => "ensnare_engine"
+   match "*_", :to => "ensnare::violations#routing_error"
 
+
+  root :to => "sessions#new"
 end
+

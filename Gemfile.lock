@@ -1,3 +1,11 @@
+GIT
+  remote: git@github.com:ahoernecke/Ensnare.git
+  revision: 03e65c73fabf02603acb38d5678e9d8d4165561f
+  specs:
+    ensnare (0.1beta)
+      rails (~> 3.2.14)
+      twitter-bootstrap-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -281,6 +289,11 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     trollop (2.0)
+    twitter-bootstrap-rails (2.2.8)
+      actionpack (>= 3.1)
+      execjs
+      rails (>= 3.1)
+      railties (>= 3.1)
     tzinfo (0.3.41)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
@@ -306,6 +319,7 @@ DEPENDENCIES
   capybara
   coffee-rails
   database_cleaner
+  ensnare!
   execjs
   foreman
   gauntlt

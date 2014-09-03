@@ -10,6 +10,7 @@ ruby '2.1.2'
 
 gem 'sqlite3'
 gem 'foreman'
+gem 'ensnare', :git => 'git@github.com:ahoernecke/Ensnare.git'
 
 group :development, :mysql do
   gem 'brakeman'
