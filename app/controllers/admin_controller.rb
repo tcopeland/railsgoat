@@ -1,5 +1,5 @@
 class AdminController < ApplicationController
-  before_action :administrative, :if => :admin_param, :except => [:get_user]
+  before_action :administrative, :except => [:get_user]
   skip_before_filter :has_info
 
   def dashboard
@@ -59,9 +59,4 @@ class AdminController < ApplicationController
     end
   end
 
-  private
-
-  def admin_param
-    params[:admin_id] != '1'
-  end
 end

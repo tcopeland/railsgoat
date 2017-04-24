@@ -41,6 +41,7 @@ group :development, :test, :mysql do
   gem 'poltergeist'
   gem 'rspec-rails'
   gem 'test-unit'
+  gem 'byebug'
 end
 
 group :mysql do

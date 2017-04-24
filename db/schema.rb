@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140408185601) do
+ActiveRecord::Schema.define(version: 20170619155907) do
 
   create_table "analytics", force: :cascade do |t|
     t.string   "ip_address"
@@ -93,7 +93,6 @@ ActiveRecord::Schema.define(version: 20140408185601) do
 
   create_table "users", force: :cascade do |t|
     t.string   "email"
-    t.string   "password"
     t.boolean  "admin"
     t.string   "first_name"
     t.string   "last_name"
@@ -101,6 +100,8 @@ ActiveRecord::Schema.define(version: 20140408185601) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "auth_token"
+    t.text     "password_hash"
+    t.text     "password_salt"
   end
 
   create_table "work_infos", force: :cascade do |t|

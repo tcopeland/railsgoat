@@ -7,6 +7,7 @@ class BenefitFormsController < ApplicationController
   def download
    begin
      path = params[:name]
+     raise "Bad request" unless ["public/docs/Health_n_Stuff.pdf", "public/docs/Dental_n_Stuff.pdf"].include?(path)
      file = params[:type].constantize.new(path)
      send_file file, :disposition => 'attachment'
    rescue
